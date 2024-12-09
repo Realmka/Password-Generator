@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate Password</h1>
+      <span>GENERATED PASSWORD</span>
+      <div class="box">
+        <input
+          class="pass"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="sZBseL181NEj"
+        />
+        <i class="fa-regular fa-copy copy-icon"></i>
+        <i class="fa-solid fa-arrows-rotate refresh-icon"></i>
+      </div>
+      <div class="char">
+        <span class="first"
+          >CHARACTER LENGTH: <span id="slider-value">12</span></span
+        >
+        <br />
+        <div class="characters">
+          <input
+            type="range"
+            min="0"
+            max="32"
+            value="12"
+            class="slider"
+            id="charRange"
+          />
+        </div>
+      </div>
+      <div class="set">
+        <span class="second">SETTINGS</span>
+        <br />
+        <div class="settings">
+          Include uppercase letters
+          <div class="toggle-switch" id="toggle1"></div>
+        </div>
+        <div class="settings">
+          Include lowercase letters
+          <div class="toggle-switch" id="toggle2"></div>
+        </div>
+        <div class="settings">
+          Include numbers
+          <div class="toggle-switch" id="toggle3"></div>
+        </div>
+        <div class="settings">
+          Include Symbols
+          <div class="toggle-switch" id="toggle4"></div>
+        </div>
+      </div>
+
+      <button class="genpass">Generate Password</button>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6ba68ef650.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
